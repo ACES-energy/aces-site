@@ -5,25 +5,48 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .features .box {
+      background: #f4f4f4;
+      border-left: 5px solid #2e8555;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .features .box h3 {
+      margin-top: 0;
+      color: #2e8555;
+    }
+    .features .box::before {
+      content: "\2714";
+      font-size: 1.8rem;
+      color: #2e8555;
+      flex-shrink: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2, h3 {
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body class="is-preload">
   <div id="wrapper">
+
     <section id="intro" class="main">
       <div class="spotlight">
         <div class="content">
-          <header class="major">
-            <h2>ACES</h2>
-            <p>Smart, modular controls for optimizing energy generation, storage, and use to enhance savings and resilience.</p>
-          </header>
-          <ul class="actions">
-            <li><a href="#about" class="button">Learn More</a></li>
-          </ul>
         </div>
         <span class="image"><img src="images/ACES-Logo.jpg" alt="ACES Logo" /></span>
       </div>
     </section>
+
     <section id="about" class="main">
-      <header class="major"><h2>About ACES</h2></header>
       <p>ACES provides scalable, modular energy control systems for microgrids and distributed energy resources (DERs). Our technology accelerates deployment and enhances system performance:</p>
       <ul>
         <li>50–80% faster development</li>
@@ -31,15 +54,25 @@
         <li>Resilience enhancement for critical infrastructure</li>
       </ul>
     </section>
+
     <section id="value" class="main">
       <header class="major"><h2>Value Propositions</h2></header>
       <div class="features">
-        <article><h3>Cost Savings</h3><p>Lower operational costs with optimized dispatch.</p></article>
-        <article><h3>Resilience</h3><p>Enhanced uptime and grid independence during outages.</p></article>
-        <article><h3>Modularity</h3><p>Flexible architecture reduces integration time.</p></article>
-        <article><h3>Deployment Options</h3><p>Cloud or local hosting for diverse infrastructure.</p></article>
+        <div class="box">
+          <article><h3>Cost Savings</h3><p>Lower operational costs with optimized dispatch.</p></article>
+        </div>
+        <div class="box">
+          <article><h3>Resilience</h3><p>Enhanced uptime and grid independence during outages.</p></article>
+        </div>
+        <div class="box">
+          <article><h3>Modularity</h3><p>Flexible architecture reduces integration time.</p></article>
+        </div>
+        <div class="box">
+          <article><h3>Deployment Options</h3><p>Cloud or local hosting for diverse infrastructure.</p></article>
+        </div>
       </div>
     </section>
+
     <section id="markets" class="main">
       <header class="major"><h2>Markets Served</h2></header>
       <p>ACES serves a wide range of energy use cases:</p>
@@ -50,6 +83,7 @@
         <li>Utilities</li>
       </ul>
     </section>
+
     <section id="advantages" class="main">
       <header class="major"><h2>Competitive Advantages</h2></header>
       <p>ACES offers advanced capabilities compared to leading competitors:</p>
@@ -60,6 +94,7 @@
         <li>Scalable for residential to utility scale</li>
       </ul>
     </section>
+
     <section id="model" class="main">
       <header class="major"><h2>Business Model</h2></header>
       <p>ACES operates on a B2B licensing and support model:</p>
@@ -69,6 +104,7 @@
         <li>Annual support services</li>
       </ul>
     </section>
+
     <section id="contact" class="main">
       <header class="major"><h2>Contact</h2></header>
       <form method="POST" action="https://formspree.io/f/your-form-id">
@@ -93,10 +129,12 @@
       <p>Email: <a href="mailto:adaptive.controls.llc@gmail.com">adaptive.controls.llc@gmail.com</a><br />
          Phone: 480-386-3607</p>
     </section>
+
     <footer id="footer">
       <p>&copy; 2025 ACES. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
   </div>
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
